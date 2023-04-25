@@ -13,7 +13,11 @@ primary key  (id)
 insert into mytable (username, email) values("rakshith","rakshithrai@gmail.com");
 
 select * from mytable;
+use performance_schema;
+show tables;
 
+
+select * from accounts;
 show databases;
 
 show tables;
@@ -112,6 +116,11 @@ insert into burn (rate,price) values(10.3,400);
 
 select * from mycar order by car_id desc;
 select * from burn;
+set @a=1;
+use sql_store;
+create table orders_archive as select * from orders;
+
+
 
 
 
