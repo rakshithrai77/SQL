@@ -120,6 +120,11 @@ set @a=1;
 use sql_store;
 create table orders_archive as select * from orders;
 
+use sql_invoicing;
+truncate invoice_archive;
+select * from invoice_archive;
+dr
+
 
 
 
